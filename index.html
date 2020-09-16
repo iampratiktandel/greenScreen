@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Screen Program</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <h1>Green Screen Algorithm</h1>
+  <canvas id="fgCan">
+    
+  </canvas>
+  <canvas id="bgCan">
+    
+  </canvas>
+  <p>
+    Foreground:
+    <input type="file" id="fgInput" multiple="false" accept="image/*" onchange="loadForegroundImage()">
+  </p>
+  <p>
+    Background:
+    <input type="file" id="bgInput" multiple="false" accept="image/*" onchange="loadBackgroundImage()">
+  </p>
+  <p>
+    <input type="button" value="Create Composite" onclick="doGreenScreen()">
+    <input type="button" value="Clear Canvases" onclick="clearCanvas()">
+  </p>
+</body>
+</html>
